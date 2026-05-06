@@ -18,6 +18,7 @@ class RobotDefaults(TypedDict):
 _ROBOT_DEFAULTS: dict[str, RobotDefaults] = {
     "g1": {"robot_dof": 29, "robot_height": 1.32, "object_name": "ground"},
     "t1": {"robot_dof": 23, "robot_height": 1.2, "object_name": "ground"},
+    "adam_sp": {"robot_dof": 29, "robot_height": 1.6, "object_name": "ground"},
 }
 
 
@@ -154,6 +155,19 @@ class RobotConfig:
                 "left_foot_sphere_5_link",
                 "right_foot_sphere_5_link",
             ]
+        if self.robot_type == "adam_sp":
+            return [
+                "left_ankle_roll_sphere_1_link",
+                "right_ankle_roll_sphere_1_link",
+                "left_ankle_roll_sphere_2_link",
+                "right_ankle_roll_sphere_2_link",
+                "left_ankle_roll_sphere_3_link",
+                "right_ankle_roll_sphere_3_link",
+                "left_ankle_roll_sphere_4_link",
+                "right_ankle_roll_sphere_4_link",
+                "left_ankle_roll_sphere_5_link",
+                "right_ankle_roll_sphere_5_link",
+            ]
         raise ValueError(f"Invalid robot type: {self.robot_type}")
 
     FOOT_STICKING_LINKS = property(
@@ -217,7 +231,7 @@ class RobotConfig:
         if self.manual_cost is not None:
             return self.manual_cost
 
-        if self.robot_type == "g1":
+        if self.robot_type == "g1" or self.robot_type == "adam_sp":
             return {"19": 0.2, "20": 0.2}  # waist yaw, waist roll
         return {}
 
@@ -228,7 +242,7 @@ class RobotConfig:
         if self.nominal_tracking_indices is not None:
             return self.nominal_tracking_indices
 
-        if self.robot_type == "g1":
+        if self.robot_type == "g1" or self.robot_type == "adam_sp":
             return np.arange(19)
         if self.robot_type == "t1":
             return np.concatenate([np.arange(7), np.arange(11, 23)])

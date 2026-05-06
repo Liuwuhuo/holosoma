@@ -209,6 +209,23 @@ JOINTS_MAPPINGS = {
         "LeftHand": "left_hand_sphere_link",
         "RightHand": "right_hand_sphere_link",
     },
+    ("lafan", "adam_sp"): {
+        "Spine1": "pelvis",
+        "LeftUpLeg": "hipPitchLeft",
+        "RightUpLeg": "hipPitchRight",
+        "LeftLeg": "shinLeft",
+        "RightLeg": "shinRight",
+        "LeftArm": "shoulderRollLeft",
+        "RightArm": "shoulderRollRight",
+        "LeftForeArm": "elbowLeft",
+        "RightForeArm": "elbowRight",
+        "LeftFoot": "left_ankle_intermediate_1_link",
+        "RightFoot": "right_ankle_intermediate_1_link",
+        "LeftToeBase": "left_ankle_roll_sphere_5_link",
+        "RightToeBase": "right_ankle_roll_sphere_5_link",
+        "LeftHand": "wristRollLeft",
+        "RightHand": "wristRollRight",
+    },
     ("smplh", "g1"): {
         "Pelvis": "pelvis_contour_link",
         "L_Hip": "left_hip_pitch_link",
@@ -313,7 +330,7 @@ class FormatConstants(TypedDict, total=False):
 
 DATA_FORMAT_CONSTANTS: dict[str, FormatConstants] = {
     "lafan": {
-        "default_scale_factor": 1.27 / 1.7,
+        "default_scale_factor": 1.68 / 1.7,
     },
     "mocap": {
         "default_human_height": 1.78,
