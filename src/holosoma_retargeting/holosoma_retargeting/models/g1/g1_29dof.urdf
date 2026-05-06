@@ -1,7 +1,7 @@
 <robot name="g1_29dof">
-  <!-- <mujoco>
+  <mujoco>
     <compiler meshdir="assets" discardvisual="false"/>
-  </mujoco> -->
+  </mujoco>
 
   <!-- [CAUTION] uncomment when convert to mujoco -->
   <!-- <link name="world"></link>
@@ -25,12 +25,6 @@
         <color rgba="0.2 0.2 0.2 1"/>
       </material>
     </visual>
-    <!-- <collision name="pelvis">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="assets/pelvis.obj"/>
-      </geometry>
-    </collision> -->
   </link>
   <link name="pelvis_contour_link">
     <inertial>
@@ -47,7 +41,7 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="pelvis_contour_link">
+    <collision name="pelvis_contour">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/pelvis_contour_link.obj"/>
@@ -75,7 +69,7 @@
         <color rgba="0.2 0.2 0.2 1"/>
       </material>
     </visual>
-    <collision name="left_hip_pitch_link">
+    <collision name="left_hip_pitch">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/left_hip_pitch_link.obj"/>
@@ -104,7 +98,7 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="left_hip_roll_link">
+    <collision name="left_hip_roll">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/left_hip_roll_link.obj"/>
@@ -133,7 +127,7 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="left_hip_yaw_link">
+    <collision name="left_hip_yaw">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/left_hip_yaw_link.obj"/>
@@ -162,7 +156,7 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="left_knee_link">
+    <collision name="left_knee">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/left_knee_link.obj"/>
@@ -191,7 +185,7 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="left_ankle_intermediate_1_link">
+    <collision name="left_ankle_intermediate_1">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
@@ -202,7 +196,7 @@
     <origin xyz="0 0 -0.28" rpy="0 0 0"/>
     <parent link="left_knee_link"/>
     <child link="left_ankle_intermediate_1_link"/>
-  </joint>
+  </joint> 
   <link name="left_ankle_pitch_link">
     <inertial>
       <origin xyz="-0.007269 0 0.011137" rpy="0 0 0"/>
@@ -218,7 +212,7 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="left_ankle_pitch_link">
+    <collision name="left_ankle_pitch">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/left_ankle_pitch_link.obj"/>
@@ -247,7 +241,7 @@
         <color rgba="0.2 0.2 0.2 1"/>
       </material>
     </visual>
-    <collision name="left_ankle_roll_link">
+    <collision name="left_ankle_roll">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/left_ankle_roll_link.obj"/>
@@ -276,7 +270,7 @@
         <color rgba="0.2 0.2 0.2 1"/>
       </material>
     </visual>
-    <collision name="left_ankle_roll_sphere_3_link">
+    <collision name="left_ankle_roll_sphere_3">
       <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.005"/>
@@ -303,7 +297,7 @@
         <color rgba="0.2 0.2 0.2 1"/>
       </material>
     </visual>
-    <collision name="left_ankle_roll_sphere_4_link">
+    <collision name="left_ankle_roll_sphere_4">
       <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.005"/>
@@ -330,7 +324,7 @@
         <color rgba="0.2 0.2 0.2 1"/>
       </material>
     </visual>
-    <collision name="left_ankle_roll_sphere_5_link">
+    <collision name="left_ankle_roll_sphere_5">
       <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.005"/>
@@ -357,7 +351,7 @@
         <color rgba="0.2 0.2 0.2 1"/>
       </material>
     </visual>
-    <collision name="left_ankle_roll_sphere_1_link">
+    <collision name="left_ankle_roll_sphere_1">
       <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.005"/>
@@ -384,7 +378,7 @@
         <color rgba="0.2 0.2 0.2 1"/>
       </material>
     </visual>
-    <collision name="left_ankle_roll_sphere_2_link">
+    <collision name="left_ankle_roll_sphere_2">
       <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.005"/>
@@ -411,7 +405,7 @@
         <color rgba="0.2 0.2 0.2 1"/>
       </material>
     </visual>
-    <collision name="right_hip_pitch_link">
+    <collision name="right_hip_pitch">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/right_hip_pitch_link.obj"/>
@@ -440,7 +434,7 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="right_hip_roll_link">
+    <collision name="right_hip_roll">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/right_hip_roll_link.obj"/>
@@ -469,7 +463,7 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="right_hip_yaw_link">
+    <collision name="right_hip_yaw">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/right_hip_yaw_link.obj"/>
@@ -498,7 +492,7 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="right_knee_link">
+    <collision name="right_knee">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/right_knee_link.obj"/>
@@ -527,7 +521,7 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="right_ankle_intermediate_1_link">
+    <collision name="right_ankle_intermediate_1">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
@@ -538,7 +532,7 @@
     <origin xyz="0 0 -0.28" rpy="0 0 0"/>
     <parent link="right_knee_link"/>
     <child link="right_ankle_intermediate_1_link"/>
-  </joint>
+  </joint> 
   <link name="right_ankle_pitch_link">
     <inertial>
       <origin xyz="-0.007269 0 0.011137" rpy="0 0 0"/>
@@ -554,7 +548,7 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="right_ankle_pitch_link">
+    <collision name="right_ankle_pitch">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/right_ankle_pitch_link.obj"/>
@@ -583,10 +577,22 @@
         <color rgba="0.2 0.2 0.2 1"/>
       </material>
     </visual>
-    <collision name="right_ankle_roll_link">
+    <collision name="right_ankle_roll">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/right_ankle_roll_link.obj"/>
+      </geometry>
+    </collision>
+    <collision name="right_ankle_roll_sphere_3">
+      <origin xyz="0.12 0.03 -0.03" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.005"/>
+      </geometry>
+    </collision>
+    <collision name="right_ankle_roll_sphere_4">
+      <origin xyz="0.12 -0.03 -0.03" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.005"/>
       </geometry>
     </collision>
   </link>
@@ -612,7 +618,7 @@
         <color rgba="0.2 0.2 0.2 1"/>
       </material>
     </visual>
-    <collision name="right_ankle_roll_sphere_3_link">
+    <collision name="right_ankle_roll_sphere_3">
       <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.005"/>
@@ -639,7 +645,7 @@
         <color rgba="0.2 0.2 0.2 1"/>
       </material>
     </visual>
-    <collision name="right_ankle_roll_sphere_4_link">
+    <collision name="right_ankle_roll_sphere_4">
       <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.005"/>
@@ -666,7 +672,7 @@
         <color rgba="0.2 0.2 0.2 1"/>
       </material>
     </visual>
-    <collision name="right_ankle_roll_sphere_5_link">
+    <collision name="right_ankle_roll_sphere_5">
       <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.005"/>
@@ -693,7 +699,7 @@
         <color rgba="0.2 0.2 0.2 1"/>
       </material>
     </visual>
-    <collision name="right_ankle_roll_sphere_1_link">
+    <collision name="right_ankle_roll_sphere_1">
       <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.005"/>
@@ -720,7 +726,7 @@
         <color rgba="0.2 0.2 0.2 1"/>
       </material>
     </visual>
-    <collision name="right_ankle_roll_sphere_2_link">
+    <collision name="right_ankle_roll_sphere_2">
       <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.005"/>
@@ -795,7 +801,7 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="torso_link">
+    <collision name="torso">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/torso_link.obj"/>
@@ -831,7 +837,7 @@
         <color rgba="0.2 0.2 0.2 1"/>
       </material>
     </visual>
-    <collision name="logo_link">
+    <collision name="logo">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/logo_link.obj"/>
@@ -855,7 +861,7 @@
         <color rgba="0.2 0.2 0.2 1"/>
       </material>
     </visual>
-    <collision name="head_link">
+    <collision name="head">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/head_link.obj"/>
@@ -884,7 +890,7 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="waist_support_link">
+    <collision name="waist_support">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/waist_support_link.obj"/>
@@ -937,7 +943,7 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="left_shoulder_pitch_link">
+    <collision name="left_shoulder_pitch">
       <origin xyz="0 0.04 -0.01" rpy="0 1.5707963267948966 0"/>
       <geometry>
         <cylinder radius="0.03" length="0.05"/>
@@ -966,7 +972,7 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="left_shoulder_roll_link">
+    <collision name="left_shoulder_roll">
       <origin xyz="-0.004 0.006 -0.053" rpy="0 0 0"/>
       <geometry>
         <cylinder radius="0.03" length="0.03"/>
@@ -995,7 +1001,7 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="left_shoulder_yaw_link">
+    <collision name="left_shoulder_yaw">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/left_shoulder_yaw_link.obj"/>
@@ -1024,7 +1030,7 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="left_elbow_link">
+    <collision name="left_elbow">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/left_elbow_link.obj"/>
@@ -1060,7 +1066,7 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="left_wrist_roll_link">
+    <collision name="left_wrist_roll">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/left_wrist_roll_link.obj"/>
@@ -1089,7 +1095,7 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="left_wrist_pitch_link">
+    <collision name="left_wrist_pitch">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/left_wrist_pitch_link.obj"/>
@@ -1118,7 +1124,7 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="left_wrist_yaw_link">
+    <collision name="left_wrist_yaw">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/left_wrist_yaw_link.obj"/>
@@ -1145,65 +1151,13 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="left_rubber_hand_link">
+    <collision name="left_rubber_hand">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/left_rubber_hand.obj"/>
       </geometry>
     </collision>
   </link>
-  <link name="left_thumb_link">
-    <inertial>
-      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
-      <mass value="0.001"/>
-      <inertia ixx="1e-7" ixy="0" ixz="0" iyy="1e-7" iyz="0" izz="1e-7"/>
-    </inertial>
-    <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <sphere radius="0.005"/>
-      </geometry>
-    </visual>
-    <collision name="left_thumb_link">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <sphere radius="0.001"/>
-      </geometry>
-    </collision>
-  </link>
-  <joint name="left_thumb_joint" type="fixed">
-    <parent link="left_rubber_hand_link"/>
-    <child link="left_thumb_link"/>
-    <origin xyz="0.08 0 0.05" rpy="0 0 0"/>
-    <axis xyz="0 1 0"/>
-    <limit lower="-0.52" upper="0.52" effort="50" velocity="37"/>
-  </joint>
-  <link name="left_pinky_link">
-    <inertial>
-      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
-      <mass value="0.001"/>
-      <inertia ixx="1e-7" ixy="0" ixz="0" iyy="1e-7" iyz="0" izz="1e-7"/>
-    </inertial>
-    <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <sphere radius="0.005"/>
-      </geometry>
-    </visual>
-    <collsion name="left_pinky_link">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <sphere radius="0.001"/>
-      </geometry>
-    </collsion>
-  </link>
-  <joint name="left_pinky_joint" type="fixed">
-    <parent link="left_rubber_hand_link"/>
-    <child link="left_pinky_link"/>
-    <origin xyz="0.12 0 -0.04" rpy="0 0 0"/>
-    <axis xyz="0 1 0"/>
-    <limit lower="-0.52" upper="0.52" effort="50" velocity="37"/>
-  </joint>
   <link name="right_shoulder_pitch_link">
     <inertial>
       <origin xyz="0 -0.035892 -0.011628" rpy="0 0 0"/>
@@ -1219,7 +1173,7 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="right_shoulder_pitch_link">
+    <collision name="right_shoulder_pitch">
       <origin xyz="0 -0.04 -0.01" rpy="0 1.5707963267948966 0"/>
       <geometry>
         <cylinder radius="0.03" length="0.05"/>
@@ -1248,7 +1202,7 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="right_shoulder_roll_link">
+    <collision name="right_shoulder_roll">
       <origin xyz="-0.004 -0.006 -0.053" rpy="0 0 0"/>
       <geometry>
         <cylinder radius="0.03" length="0.03"/>
@@ -1277,7 +1231,7 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="right_shoulder_yaw_link">
+    <collision name="right_shoulder_yaw">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/right_shoulder_yaw_link.obj"/>
@@ -1306,7 +1260,7 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="right_elbow_link">
+    <collision name="right_elbow">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/right_elbow_link.obj"/>
@@ -1342,7 +1296,7 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="right_wrist_roll_link">
+    <collision name="right_wrist_roll">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/right_wrist_roll_link.obj"/>
@@ -1371,7 +1325,7 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="right_wrist_pitch_link">
+    <collision name="right_wrist_pitch">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/right_wrist_pitch_link.obj"/>
@@ -1400,7 +1354,7 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="right_wrist_yaw_link">
+    <collision name="right_wrist_yaw">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/right_wrist_yaw_link.obj"/>
@@ -1427,63 +1381,11 @@
         <color rgba="0.7 0.7 0.7 1"/>
       </material>
     </visual>
-    <collision name="right_rubber_hand_link">
+    <collision name="right_rubber_hand">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="assets/right_rubber_hand.obj"/>
       </geometry>
     </collision>
   </link>
-  <link name="right_thumb_link">
-    <inertial>
-      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
-      <mass value="0.001"/>
-      <inertia ixx="1e-7" ixy="0" ixz="0" iyy="1e-7" iyz="0" izz="1e-7"/>
-    </inertial>
-    <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <sphere radius="0.005"/>
-      </geometry>
-    </visual>
-    <collision name="right_thumb_link">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <sphere radius="0.001"/>
-      </geometry>
-    </collision>
-  </link>
-  <joint name="right_thumb_joint" type="fixed">
-    <parent link="right_rubber_hand_link"/>
-    <child link="right_thumb_link"/>
-    <origin xyz="0.08 0 0.05" rpy="0 0 0"/>
-    <axis xyz="0 1 0"/>
-    <limit lower="-0.52" upper="0.52" effort="50" velocity="37"/>
-  </joint>
-  <link name="right_pinky_link">
-    <inertial>
-      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
-      <mass value="0.001"/>
-      <inertia ixx="1e-7" ixy="0" ixz="0" iyy="1e-7" iyz="0" izz="1e-7"/>
-    </inertial>
-    <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <sphere radius="0.005"/>
-      </geometry>
-    </visual>
-    <collision name="right_pinky_link">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <sphere radius="0.001"/>
-      </geometry>
-    </collision>
-  </link>
-  <joint name="right_pinky_joint" type="fixed">
-    <parent link="right_rubber_hand_link"/>
-    <child link="right_pinky_link"/>
-    <origin xyz="0.12 0 -0.04" rpy="0 0 0"/>
-    <axis xyz="0 1 0"/>
-    <limit lower="-0.52" upper="0.52" effort="50" velocity="37"/>
-  </joint>
 </robot>
